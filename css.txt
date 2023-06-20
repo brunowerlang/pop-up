@@ -9,19 +9,6 @@
     justify-content: center;
 }
 
-.newpopup {
-    position: absolute;
-            top: 0;
-            left: 0;
-            background-color: rgba(112, 9, 9, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            display: grid;
-    
-}
-
-
 .conteudo {
     background-color: rgb(208, 209, 115);
     padding: 100px 20px;

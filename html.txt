@@ -47,12 +47,7 @@
             var email = document.getElementById("email").value;
             var celular = document.getElementById("celular").value;
 
-            if (nome === "" || email === "" || celular === "") {
-                alert("Preencha todos os campos!");
-                return false;
-            }
-
-            return true;
+            
         }
 
         function enviarFormulario() {
@@ -60,22 +55,17 @@
             var email = document.getElementById("email").value;
             var celular = document.getElementById("celular").value;
 
-            var novoPopUp = document.createElement("div");
-            novoPopUp.className = "newpopup";
-            novoPopUp.innerHTML = `
-                <h2>Você ganhou 10% OFF!</h2>
-                <p>Aplique o cupom MS10<br> na tela de pagamento</p>
-            `;
-
-            document.body.appendChild(novoPopUp);
+            
         }
 
         function formatarInputCelular() {
             var celularInput = document.getElementById("celular");
             var celular = celularInput.value;
 
+            
             var celularNumerico = celular.replace(/\D/g, "");
 
+            
             if (celularNumerico.length >= 2) {
                 var ddd = celularNumerico.substring(0, 2);
                 var parte1 = celularNumerico.substring(2, 7);
@@ -83,6 +73,7 @@
                 celularInput.value = "(" + ddd + ")" + parte1 + "-" + parte2;
             }
         }
+
 
     </script>
 </body>
